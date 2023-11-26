@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0</TargetFrameworks>
 		<Copyright>Copyright 算神工作室 2023.</Copyright>
 		<Authors>算神</Authors>
 		<PackageId>JT808.Protocol.Extensions.Streamax</PackageId>
