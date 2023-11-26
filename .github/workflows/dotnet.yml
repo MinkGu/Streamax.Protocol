@@ -34,4 +34,4 @@ jobs:
       with:
         name: softwarename
         path: | 
-          ${{ env.GITHUB_WORKSPACE }}/bin/Release/net8.0/
+          /home/runner/work/Streamax.Protocol/Streamax.Protocol/JT808.Protocol.Extensions.Streamax.Test/bin/Release/net8.0/
