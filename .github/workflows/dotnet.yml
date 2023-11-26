@@ -28,12 +28,10 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Publish .NET
       run: |
-        dotnet publish /p:PublishProfile=Release-win-x86 -c Release
-        dotnet publish /p:PublishProfile=Release-win-x64 -c Release
+        dotnet publish -c Release
     - name: Upload Published Artifact
       uses: actions/upload-artifact@v2
       with:
         name: softwarename
         path: | 
-          ${{ env.GITHUB_WORKSPACE }}/Software/win-x86/
-          ${{ env.GITHUB_WORKSPACE }}/Software/win-x64/
+          ${{ env.GITHUB_WORKSPACE }}/bin/Release/net8.0/publish/
